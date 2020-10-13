@@ -26,6 +26,9 @@ public class Patient {
     private int age;
 
 
+    public Patient() {
+        
+    }
     public Patient(String firstname, String lastname, String gender, LocalDate dob) {
         this.firstname = firstname;
         this.lastname = lastname;

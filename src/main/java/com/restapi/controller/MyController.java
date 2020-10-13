@@ -71,7 +71,7 @@ public class MyController {
         }
     }*/
     @PostMapping("/patient")
-    public ResponseEntity<Object> newPatient(@RequestBody Patient patient, Object Status){
+    public ResponseEntity<Object> newPatient(@RequestBody Patient patient){
 
 
         String pattern = "^([A-Za-z0-9])*$";
