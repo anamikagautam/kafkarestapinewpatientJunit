@@ -1,0 +1,12 @@
+ports:
+  - port: 3000-8999
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: echo "Replace me with a build script for the project."
+    command: mkdir -p /workspace/data && mongod --dbpath /workspace/data &
+  - init: echo "Setting Up Kafka and Zookeeper"
+    command: sh build.sh
+  - init: echo "Importing csv file"
+    command: sh bid.sh
+
